@@ -8,7 +8,7 @@ import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <LogoTicker />
       <ProductShowcase />
@@ -16,6 +16,6 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <CTA />
-    </>
+    </main>
   );
 }
