@@ -3,7 +3,7 @@ import logoSaas from "@/assets/logosaas.png";
 import Navbar from "./Navbar";
 export default function Header() {
   return (
-    <header className="py-5 overflow-x-clip px-3 sm:px-5 sticky top-0 w-full backdrop-blur-sm z-50">
+    <header className="py-5 overflow-x-clip px-3 sm:px-5 md:px-10 xl:px-20 sticky top-0 w-full backdrop-blur-sm z-50">
       <nav className="container mx-auto">
         <div className="w-full flex items-center justify-between">
           <figure>
