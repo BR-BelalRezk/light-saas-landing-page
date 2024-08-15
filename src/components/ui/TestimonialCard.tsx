@@ -41,7 +41,12 @@ export default function TestimonialCard({
 
 function Testimonial({ item }: { item: any }) {
   return (
-    <div className="p-10 border max-w-xs w-full border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#eaeaea]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "linear" }}
+      className="p-10 border max-w-xs w-full border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#eaeaea]"
+    >
       <div>{item.text}</div>
       <figure className="flex items-center gap-2 mt-5">
         <Image
@@ -58,6 +63,6 @@ function Testimonial({ item }: { item: any }) {
           <div className="leading-5 tracking-tight">{item.username}</div>
         </figcaption>
       </figure>
-    </div>
+    </motion.div>
   );
 }
