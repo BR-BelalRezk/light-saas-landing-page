@@ -38,7 +38,7 @@ export default function Features() {
                   repeat: Infinity,
                   repeatType: "loop",
                   ease: "linear",
-                  duration: 2.5,
+                  duration: index === 0 ? 1.5 : 2.5,
                 }}
               >
                 <Image draggable={false} src={item.src} alt={item.title} />
