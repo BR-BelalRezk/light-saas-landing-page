@@ -33,13 +33,14 @@ export default function Features() {
                 drag
                 dragSnapToOrigin
                 initial={{ translateY: 0 }}
-                whileInView={{ translateY: [0, 25, 0] }}
+                whileInView={{ translateY: [0, 50, 0] }}
                 transition={{
                   repeat: Infinity,
                   repeatType: "loop",
                   ease: "linear",
-                  duration: index === 0 ? 1.5 : 2.5,
+                  duration: index === 0 ? 2 : 3,
                 }}
+                className="relative z-50"
               >
                 <Image draggable={false} src={item.src} alt={item.title} />
               </motion.figure>
