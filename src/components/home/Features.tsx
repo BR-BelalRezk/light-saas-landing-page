@@ -33,7 +33,7 @@ export default function Features() {
                 drag
                 dragSnapToOrigin
                 initial={{ translateY: 0 }}
-                whileInView={{ translateY: [0, 50, 0] }}
+                whileInView={{ translateY: [0, -50, 0] }}
                 transition={{
                   repeat: Infinity,
                   repeatType: "loop",
