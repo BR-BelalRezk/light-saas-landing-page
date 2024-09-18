@@ -38,10 +38,8 @@ export default function Features() {
                   repeat: Infinity,
                   repeatType: "loop",
                   ease: "linear",
-                  duration: index === 0 ? 2 : 3,
-                  delay: index === 0 ? 0.5 : 1,
+                  duration: index === 0 ? 2.5 : 5,
                 }}
-                className="relative z-50"
               >
                 <Image draggable={false} src={item.src} alt={item.title} />
               </motion.figure>
