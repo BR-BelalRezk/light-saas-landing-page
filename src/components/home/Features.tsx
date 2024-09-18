@@ -39,6 +39,7 @@ export default function Features() {
                   repeatType: "loop",
                   ease: "linear",
                   duration: index === 0 ? 2 : 3,
+                  delay: index === 0 ? 0.5 : 1,
                 }}
                 className="relative z-50"
               >
